@@ -1,0 +1,49 @@
+{% extends 'global/base.html' %}
+
+{% block formulario %}
+<article class="container mb-5">
+
+    <form method="POST" action="" name="form_cadastrousuario">
+      <label for="nomecompleto">Nome Completo</label>
+      <input type="text" class="form-control" name="nomecompleto" required>
+     
+      <label for="email">E-mail</label>
+      <input type="email"  class="form-control" name="email" required>
+     
+      <label for="senha">Senha</label>
+      <input type="password" class="form-control" name="senha">
+      <br>
+      <label for="sexo">Sexo</label>
+      <input type="radio" name="sexo" value="Feminino">Feminino
+      <input type="radio" name="sexo" value="Masculino">Masculino
+      <br>
+      <br>
+      <label for="cep">Cep:
+        <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br/>
+        <label for="rua">Rua:
+        <input class="form-control" name="rua" type="text" id="rua" size="60" /></label>
+        <label for="numero">Numero:
+          <input class="form-control" name="numero" type="number"/></label>
+          <label for="complemento">Complemento:
+            <input class="form-control" name="complemento" type="complemento"/></label><br />
+        <label for="bairro">Bairro:
+        <input class="form-control" name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label for="cidade">Cidade:
+        <input class="form-control" name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label for="uf">Estado:
+        <input class="form-control" name="uf" type="text" id="uf" size="2" /></label><br />
+        <hidden name="ibge" type="text" id="ibge" size="8" /></label><br />
+        
+      <input type="submit" name="cadastrarusuario" value="Cadastrar">
+      <br>
+      <br>
+    </form>
+ 
+  </article>
+{% endblock formulario %}
+
+{% block footer %}
+
+
+{% endblock footer %}

@@ -1,0 +1,65 @@
+{% extends 'global/base.html' %}
+
+{% block home %} 
+<article class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8">
+
+        <!-- botões de avancar e retroceder -->
+        <div class="container py-5">
+          <!-- começo da div carousel com o devido atributo -->
+          <div class="carousel slide" data-bs-ride="carousel" id="ads">
+            <div class="carousel-indicators">
+              <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+              <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+              <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <!-- carousel-iner contem os slides em si -->
+            <div class="carousel-inner">
+              <!-- cada slide é uma div da carousel-item -->
+              <div class="carousel-item active" data-bs-interval="3000">
+                <a href="/static/img/servico1.jpg" target="v_blank"> <img src="/static/img/fut1.jpg" class="d-block w-100"
+                    width="800" height="400" alt="..."> </a>
+              </div>
+              <!-- vamos replicar acima duas vezes -->
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="/static/img/servico1.jpg" target="v_blank"> <img src="/static/img/fut2.jpg" class="d-block w-100"
+                    width="800" height="400" alt="..."> </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="/static/img/servico1.jpg" target="v_blank"> <img src="/static/img/fut3.jpg" class="d-block w-100"
+                    width="800" height="400" alt="..."> </a>
+              </div>
+            </div>
+            <buttom class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </buttom>
+            <buttom class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </buttom>
+
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-4">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <h1 class="h1">Propaganda</h1>
+            <img src="/static/img/eliascabelo.png" alt="" width="280" height="380" alt="...">
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
+  {% endblock home %}
+
+  {% block footer %}
+
+  
+
+  
+  {% endblock footer %}
+
+  

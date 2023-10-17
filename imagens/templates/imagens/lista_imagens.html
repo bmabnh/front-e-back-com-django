@@ -1,0 +1,12 @@
+{% extends 'global/base.html' %}
+
+{% block unidades %}
+
+    <h1>Lista de Imagens</h1>
+    {% for imagem in imagens %}
+        <h2>{{ imagem.titulo }}</h2>
+        <img src="{{ imagem.imagem.url }}" alt="{{ imagem.titulo }}">
+        <p>{{ imagem.descricao }}</p>
+    {% endfor %}
+
+{% endblock unidades  %}

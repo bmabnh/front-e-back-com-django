@@ -1,0 +1,210 @@
+/*APLICAÇÃO DA FONT DO GOOGLE*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Work+Sans:ital,wght@0,100;0,400;1,100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0 auto;
+	box-sizing: 0;
+	/*propriedade para aplicar a familia de fontes do Google*/
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	font-family: 'Belanosima', sans-serif;
+
+}
+
+h1{
+	font-family: 'Belanosima';
+}
+
+#principal{
+	width:100%;
+	height: 250vh;
+	/*background-color: red;*/
+
+}
+
+#cabecalho{
+	width:100%;
+	height: 25vh;
+	/*background-color: brown;*/
+}
+
+#logo{
+	width:20%;
+	height: 15vh;
+	/*background-color: orange;*/
+	float: left;
+	padding-left: 20px;
+
+}
+
+#logo img{
+	width: 90%;	
+	height: 15vh;
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+
+}
+
+nav{
+	width: 100%;	
+	/*height: 15vh;*/
+	/*background-color: olivedrab;*/
+	padding-top: 20px;
+}
+
+.navbar{
+	width: 80%;
+}
+
+.navbar-nav li:hover{
+	background-color: rgb(151, 164, 151);
+
+	}
+
+#login{
+	width:50px;
+	height: 6vh;
+}
+
+#conteudo{
+	width:100%;
+	height: 205vh;
+	/*background-color: blueviolet;*/
+}
+
+#conteudo_esq{
+	width:70%;
+	height: 150vh;
+	/*background-color: lavender;*/
+	float: left;
+
+}
+
+#conteudo_esq img{
+	width: 80%;
+	height: 65vh;
+	margin-top: 10px;
+
+}
+
+#conteudo_dir{
+	width:25%;
+	height: 70vh;
+	/*background-color: goldenrod;*/
+	float: right;
+}
+
+#rodape{
+	width:100%;
+	height: 45vh;
+	/*background-color: yellow;*/
+}
+
+footer{
+	width:100%;
+	height:35vh;
+	border:0px solid ;
+}
+
+
+#mapa{
+	width:50%;
+	height: 35vh;
+	/*background-color: sienna;*/
+	float: left;
+
+}
+
+#mapa iframe{
+	margin: 10px 10px;
+	border-color: yellow;
+	border-style: outset;
+}
+
+
+#redesocial{
+	width:50%;
+	height: 35vh;
+	/*background-color: slategrey;*/
+	float: right;
+}
+
+#redesocial img{
+	width: 70px;
+	height: 10vh;
+	border-radius: 50%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+#redesocial ul{
+	display: inline;
+
+}
+
+#redesocial ul li{
+  display: inline;
+	width: 80px;
+	margin-left: 30px;
+	
+}
+
+#copy{
+	width:100%;
+	height: 10vh;
+	background-color: black;
+	
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+.icon {
+	font-size: 30px;
+	color: #c904db; /* Cor dos ícones */
+	margin: 20px; /* Espaçamento entre os ícones */
+	text-decoration: none;
+}
+  
+  /* Quando o mouse passa por cima do ícone, mude a cor */
+.icon:hover {
+	color: #007bff; /* Cor de destaque ao passar o mouse */
+}
+/* FORMATAÇÃO RESPONSIVA */
+/*
+@media (max-width:1400px){
+	#logo{
+		background-color: red;
+	}
+}
+
+@media (max-width:1200px){
+	#logo{
+		background-color: cyan;
+	}
+	
+}
+
+@media (max-width:992px){
+	#logo{
+		background-color: pink;
+	}
+}
+
+@media (max-width:768px){
+	#logo{
+		background-color: brown;
+	}
+}
+
+@media (max-width:576px){
+	
+}
+*/
